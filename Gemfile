@@ -54,3 +54,4 @@ gem 'chronic'
 gem 'ancestry' # 树结构
 gem 'by_star' # 按数据搜索
 gem 'rack-cors' # 处理跨域
+gem 'write_xlsx'
