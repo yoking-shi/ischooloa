@@ -3,7 +3,8 @@
 class CreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users, comment: '用户表' do |t|
-      t.string :uuid, index: true, uniqueness: true, null: false, comment: '编号'
+      t.integer :kind
+      t.string :slug, index: true, uniqueness: true, null: false, comment: '编号'
       t.string :account, index: true, uniqueness: true, null: false, comment: '用户账号'
       t.string :password_digest
       t.string :mobile, index: true, uniqueness: true, null: false, comment: '手机号码'
