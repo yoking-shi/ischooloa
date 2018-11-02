@@ -1,2 +1,20 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(document).on('turbolinks:load', () => {
+  $('#sign-in-form').validate({
+    rules: {
+      'account': {
+        required: true
+      },
+      'password': {
+        required: true
+      }
+    },
+    messages: {
+      'account': {
+        required: '请输入用户账号！'
+      },
+      'password': {
+        required: '请输入用户密码！'
+      }
+    }
+  })
+})

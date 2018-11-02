@@ -1,2 +1,28 @@
-<h1>Admin::Cookies#sign_in</h1>
-<p>Find me in app/views/admin/cookies/sign_in.html.erb</p>
+<div class="row align-items-center justify-content-center cookies-sign-in">
+  <div class="col-4">
+    <%= form_tag admin_to_sign_in_path, method: :post, id: 'sign-in-form' do %>
+      <div class="error-tips <%= flash[:alert].present? ? 'show' : 'hide' %>">
+        <%= flash[:alert] %>
+      </div>
+      <div class="form-row">
+        <div class="col-12">
+          <label for="account">用户账号：</label>
+          <%= text_field_tag :account, '', class: 'form-control', placeholder: '请输入用户账号' %>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-12">
+          <label for="password">密码:</label>
+          <%= password_field_tag :password, '', class: 'form-control', placeholder: '请输入密码' %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="remenber" name="remenber">
+          <label class="form-check-label" for="remenber">记住我！</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-block" id="sign_up_form_submit" type="submit">登录</button>
+    <% end %>
+  </div>
+</div>

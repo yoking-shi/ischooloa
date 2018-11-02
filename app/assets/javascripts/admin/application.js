@@ -2,7 +2,9 @@
 //= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets
+//= require jquery-validation/dist/jquery.validate.min.js
 //= require metismenu/dist/metisMenu.min.js
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require ./cookies.js
