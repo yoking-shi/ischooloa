@@ -11,6 +11,13 @@
     <%= javascript_include_tag 'admin/application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= yield %>
+    <%= render partial: 'admin_left_bar' %>
+    <div class="admin-right-content">
+      <%= render partial: 'admin_right_header' %>
+      <div class="admin-right-content">
+        <%= yield %>
+      </div>
+      <%= render partial: 'admin_right_footer' %>
+    </div>
   </body>
 </html>
