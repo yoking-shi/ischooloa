@@ -4,6 +4,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "jquery-validation": "^1.18.0",
-    "metismenu": "^3.0.3"
+    "metismenu": "^3.0.3",
+    "pnotify": "^4.0.0-alpha.4"
   }
 }
