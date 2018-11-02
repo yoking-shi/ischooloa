@@ -34,7 +34,7 @@ $(document).on('turbolinks:load', () => {
       'password_confirmation': {
         required: true,
         minlength: 6,
-        equalTo: '#user_password'
+        equalTo: '#password'
       },
       _rucaptcha: {
         required: true
