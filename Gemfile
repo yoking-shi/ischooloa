@@ -16,6 +16,14 @@ gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rufo'
+  gem 'rubocop'
+  gem 'pry-rails'
+  gem 'i18n-debug'
+  gem 'rails-erd' # 生成er图
+  gem 'annotate' # 生成model的日志
+  gem 'bullet'
+  gem 'htmlbeautifier'
 end
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -30,3 +38,19 @@ group :test do
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
+gem 'bootstrap', '~> 4.1.3'
+gem 'rucaptcha'
+gem 'has_secure_token' # 安全的token
+gem 'uuid' # 生成uuid
+gem 'friendly_id', '~> 5.2.0' # slug
+gem "paranoia", "~> 2.2" # 假删
+gem 'enumerize' # 枚举
+gem 'rest-client'
+gem 'seed-fu', '~> 2.3'
+gem 'kaminari' # 翻译
+gem 'jwt'
+gem 'ffaker' # 假数据
+gem 'chronic'
+gem 'ancestry' # 树结构
+gem 'by_star' # 按数据搜索
+gem 'rack-cors' # 处理跨域
