@@ -1,5 +1,11 @@
-.cookies-sign-in {
+.cookies-sign-in, .cookies-forget-password {
   height: 100vh;
+
+  .captcha {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+  }
 
   form {
     background: #fff;
