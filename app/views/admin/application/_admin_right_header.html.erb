@@ -4,14 +4,12 @@
   </span>
   <div class="btn-group">
     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      @admin
+      <%= current_admin.realname %>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
+      <a class="dropdown-item" href="#">修改密码</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+      <a class="dropdown-item" href="<%= admin_sign_out_path %>" data-method="delete">退出</a>
     </div>
   </div>
 </nav>

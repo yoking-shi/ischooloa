@@ -52,5 +52,8 @@ class Admin::CookiesController < Admin::ApplicationController
     end
   end
 
-  def sign_out; end
+  def sign_out
+    cookies.delete('token')
+    redirect_to admin_sign_in_path
+  end
 end
